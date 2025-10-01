@@ -13,7 +13,7 @@ class Replenish extends Command
     public function __construct()
     {
         parent::__construct("replenish", "Replenish your health or hunger", "/replenish", ["r"]);
-        $this->setPermission("pocketmine.group.user");
+        $this->setPermission("replenish.exclusive.cmd");
     }
 
     public function execute(CommandSender $sender, string $commandLabel, array $args): bool
@@ -25,4 +25,5 @@ class Replenish extends Command
         $sender->sendForm(new Options());
         return true;
     }
+
 }
