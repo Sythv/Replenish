@@ -2,3 +2,15 @@ name: Replenish
 version: 1.0.0
 main: Sythv\Main
 api: 5.0.0
+
+commands:
+  replenish:
+    description: Replenish the players Health or hunger.
+    usage: /replenish
+    permission: replenish.exclusive.cmd
+    permission-message: You do not have permission to use this command.
+permissions:
+   replenish.exclusive.cmd:
+    description: Allows the player to replenish their items
+    default: true
+ 
