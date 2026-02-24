@@ -3,6 +3,8 @@ version: 1.0.0
 main: Sythv\Main
 api: 5.0.0
 
+softdepend: ["RankSystem"]
+
 commands:
   replenish:
     description: Replenish the players Health or hunger.
@@ -12,5 +14,5 @@ commands:
 permissions:
    replenish.exclusive.cmd:
     description: Allows the player to replenish their items
-    default: true
+    default: false
  
